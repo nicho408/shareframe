@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Restaurants Page</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3" });
+
+				//Autocomplete
+				$("#autocomplete").autocomplete({
+					source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
+				});
+
+				// Button
+				$("#button").button();
+				$("#radioset").buttonset();
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+	</head>
+	<body>
+	
+	<div id="mobile-view" style="width:320px;height:480px;background-color:lightgreen;position:relative;">
+	
+		<header>
+			<div class="wrapper">
+				<a class="logo" href="#" title="">
+				 Santa Monica
+				</a>
+			</div>
+	
+			<nav> 
+				<ul id="menu-primary-nav" class="">
+					<li class="about"><a href="about.html">About</a></li>
+					<li class="landmarks"><a href="landmarks.html">Landmarks</a></li>
+					<li class="events"><a href="events.html">Events</a></li>
+					<li class="restaurants"><a href="restaurants.html">Restaurants</a></li>
+					<li class="parking-lots"><a href="parking.html">Parking Lots</a></li>
+					<li class="login"><a href="login.html">Log In</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class="restaurants">
+		
+		<h1>Restaurants</h1>
+		
+		<!-- Accordion -->
+		<div id="accordion">
+			<div>
+				<h3><a href="#">About Santa Monica Restaurants</a></h3>
+				<div>
+					<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Restaurant Name</a></h3>
+				<div>
+					<article> 
+					<div class="wrapper">
+                  
+                  <h4 class="tagline">Brief 20-word statement</h4>
+
+
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="180" height="150">
+                    <!-- <p class="lot-space"><strong class="availability">78</strong> / <span class="capacity">200</span> spaces available</p> -->
+                  </div><!-- .highlight -->
+
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+
+                  <aside class="detail">
+
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                      <li class="price">Price</li>
+                      <li class="validation">Validation</li>
+                    </ul>
+
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+
+                  </aside><!-- .details -->
+
+					</div><!-- .wrapper -->
+					</article>
+				</div>
+			</div>
+		</div> <!-- Accordion end -->	
+			
+			
+		</section> <!-- section end -->
+		
+		<footer>
+			<div class="wrapper">
+				
+				<div class="nav">
+					<ul id="menu-footer-nav" class="">
+						<li class="privacy"><a href="">Privacy</a></li>
+						<li  class="terms"><a href="">Terms</a></li>
+					</ul>
+				</div> <!-- .nav end -->
+				
+				<p class="powered-by">Powered by <a href="">QckPrk</a></p>
+				
+			</div> <!-- wrapper -->
+		</footer>	
+		
+	</div>	
+	</body>
+	</html>

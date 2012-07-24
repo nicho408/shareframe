@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Front Page</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3" });
+
+				//Autocomplete
+				$("#autocomplete").autocomplete({
+					source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
+				});
+
+				// Button
+				$("#button").button();
+				$("#radioset").buttonset();
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+	</head>
+	<body>
+	
+	<div id="mobile-view" style="width:320px;height:480px;background-color:lightgreen;position:relative;">
+	
+		<header>
+			<div class="wrapper">
+				<a class="logo" href="#" title="">
+				 Santa Monica
+				</a>
+			</div>
+	
+			<nav> 
+				<ul id="menu-primary-nav" class="">
+					<li class="about"><a href="about.html">About</a></li>
+					<li class="landmarks"><a href="landmarks.html">Landmarks</a></li>
+					<li class="events"><a href="events.html">Events</a></li>
+					<li class="restaurants"><a href="restaurants.html">Restaurants</a></li>
+					<li class="parking-lots"><a href="parking.html">Parking Lots</a></li>
+					<li class="login"><a href="login.html">Log In</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+	<a id="quick-park" class="button" href="">Quick Park</a>
+	
+	<!-- Autocomplete -->
+		<h2 class="demoHeaders">Search</h2>
+		<div>
+			<input id="autocomplete" style="z-index: 100; position: relative" title="type &quot;a&quot;" />
+		</div>
+		
+	<!-- Accordion -->
+		<h2 class="demoHeaders">Accordion</h2>
+		<div id="accordion">
+			<div>
+				<h3><a href="#">About Santa Monica</a></h3>
+				<div>
+					<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Historic Landmarks</a></h3>
+				<div>
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+					
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+					
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+					
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Upcoming Events</a></h3>
+				<div>
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+					
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>
+					
+					<article> 
+						<a href="">
+							<h4>Title</h4>
+							<img src="" title="" alt="" width="100" height="100">
+							<p>The big tuna quietly leads the pirate. The captain dies like a sunny mast. The mainland endures like a clear wind. Courage is a dead gull.</p>
+						</a>
+					</article>				
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Popular Restaurants</a></h3>
+				<div>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Nearby Parking</a></h3>
+				<div>
+					<article> 
+						<a href="">
+							<h4>Title</h4>					
+							<p class="lot-space"><strong class="availability">78</strong> / <span class="capacity">200</span> spaces available</p>
+							<p>I LIKE HAPPY FEET!</p>
+						</a>
+					</article>
+				</div>
+			</div>
+		</div> <!-- Accordion end -->
+	
+		<footer>
+			<div class="wrapper">
+				
+				<div class="nav">
+					<ul id="menu-footer-nav" class="">
+						<li class="privacy"><a href="">Privacy</a></li>
+						<li  class="terms"><a href="">Terms</a></li>
+					</ul>
+				</div> <!-- .nav end -->
+				
+				<p class="powered-by">Powered by <a href="">QckPrk</a></p>
+				
+			</div> <!-- wrapper -->
+		</footer>	
+	
+	
+	</div>	
+		
+	</body>
+	</html>
