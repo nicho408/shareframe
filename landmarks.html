@@ -11,8 +11,11 @@
 			$(function(){
 
 				// Accordion
-				$("#accordion").accordion({ header: "h3" });
-
+				$("#accordion").accordion({ 
+				header: "h3",
+				autoHeight: false
+				});
+				
 				//Autocomplete
 				$("#autocomplete").autocomplete({
 					source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
@@ -76,7 +79,7 @@
 	
 		<header>
 			<div class="wrapper">
-				<a class="logo" href="#" title="">
+				<a class="logo" href="front-page.html" title="">
 				 Santa Monica
 				</a>
 			</div>
@@ -106,16 +109,16 @@
 				</div>
 			</div>
 			<div>
-				<h3><a href="#">Landmark Name</a></h3>
+				<h3><a href="#">Santa Monica Pier</a></h3>
 				<div>
 					<article> 
 					<div class="wrapper">
                   
-                  <h4 class="tagline">Brief 20-word statement</h4>
+                  <h4 class="tagline">The Santa Monica Pier is a large double-jointed pier and is a prominent, 100-year-old landmark.</h4>
 
 
                   <div class="highlight">
-                    <img src="" title="" alt="" width="180" height="150">
+                    <img src="images/smpier.jpg" title="" alt="" width="180" height="150">
                     <!-- <p class="lot-space"><strong class="availability">78</strong> / <span class="capacity">200</span> spaces available</p> -->
                   </div><!-- .highlight -->
 
@@ -126,9 +129,50 @@
                   <aside class="detail">
 
                     <ul>
-                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
-                      <li class="price">Price</li>
-                      <li class="validation">Validation</li>
+                      <li class="description">The world-famous Santa Monica Pier offers a variety of entertainment and shopping including Pacific Park amusement park; Heal The Bay Aquarium; a historic 1922 Merry-Go-Round (Carousel) plus specialty shops/carts, eateries, an old-fashioned soda fountain, and full-service restaurants.</li><!-- .description -->
+                      <!-- <li class="price">Free</li>			  -->
+                      <!-- <li class="validation">Validation</li> -->
+                    </ul>
+
+                    <p class="adr">
+                      <span class="street">200 Santa Monica Pier, Suite A</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+
+                  </aside><!-- .details -->
+
+					</div><!-- .wrapper -->
+					</article>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Coloft</a></h3>
+				<div>
+					<article> 
+					<div class="wrapper">
+                  
+                  <h4 class="tagline">Coloft provides affordable flexible shared work space and community for entrepreneurs, independents, and freelancers.</h4>
+
+
+                  <div class="highlight">
+                    <img src="images/coloft.jpg" title="" alt="" width="180" height="150">
+                    <!-- <p class="lot-space"><strong class="availability">78</strong> / <span class="capacity">200</span> spaces available</p> -->
+                  </div><!-- .highlight -->
+
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+
+                  <aside class="detail">
+
+                    <ul>
+                      <li class="description">CoLoft is a resource for business owners of all types, and is committed to providing the community an inspirational environment where entrepreneurs, startups, innovators, freelancers, and all types of independents can take their ideas and businesses to the next level.</li><!-- .description -->
+                      <!-- <li class="price">Free</li>			  -->
+                      <!-- <li class="validation">Validation</li> -->
                     </ul>
 
                     <p class="adr">
